@@ -7,7 +7,7 @@ from PIL import Image
 #定义函数方法
 def spiderPic(html):
     print('正在查找壁纸,下载中，请稍后......')
-    for addr in re.findall('src="/az/hprichbg/rb/(.*)_1920x1080.jpg',html,re.S):     #查找URL
+    for addr in re.findall('url: "/az/hprichbg/rb/([a-zA-Z0-9_-]*)_1920x1080.jpg"',html,re.S):     #查找URL
         actaddr="https://cn.bing.com/az/hprichbg/rb/"+addr+"_1920x1080.jpg"
         print('正在下载壁纸：'+addr[0:30]+'...')  #爬取的地址长度超过30时，用'...'代替后面的内容
  
