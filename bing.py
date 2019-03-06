@@ -28,6 +28,7 @@ def spiderPic(html):
 if __name__ == '__main__':
     print("现在时间："+time.asctime(time.localtime(time.time())) + ",为您下载今日Bing壁纸")
     result = requests.get('https://cn.bing.com/')
+    # result = requests.get('https://cn.bing.com/?FORM=BEHPTB&ensearch=1')
  
 #调用函数
 spiderPic(result.text)

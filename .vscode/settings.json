@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "D:\\Python\\python.exe",
-    "python.formatting.provider": "yapf"
+    "python.formatting.provider": "yapf",
+    "editor.detectIndentation": false
 }
